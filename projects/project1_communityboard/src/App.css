@@ -1,0 +1,13 @@
+.App {
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.boards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
