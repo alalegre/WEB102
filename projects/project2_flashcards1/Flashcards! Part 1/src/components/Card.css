@@ -1,0 +1,50 @@
+.Card {
+    perspective: 1000px;
+    /* width: 500px; */
+    height: 250px;
+    margin: 30px auto 30px;
+    cursor: pointer;
+    
+    transform-style: preserve-3d;
+    transition: transform 0.15s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Card.flipped {
+    transform: rotateX(180deg);
+}
+
+.Card .front, .Card .back {
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: beige;
+    color: black;
+
+    /* margin-top: 15px; */
+    padding: 1.25em;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 2px;
+    box-shadow: 0 0 5px 2px gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: 0.25s;
+}
+
+.Card .front:hover, .Card .back:hover {
+    box-shadow: 0 0 5px 2px red;
+}
+
+.back {
+    transform: rotateX(180deg);
+}
