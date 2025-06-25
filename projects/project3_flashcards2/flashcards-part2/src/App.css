@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+button.disabled {
+  opacity: 0.5;        /* gray/faded */
+  cursor: not-allowed; /* show “no” cursor */
+}
