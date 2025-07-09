@@ -1,0 +1,20 @@
+.form-list {
+  list-style-position: inside; /* bullet and label stay on same line */
+  padding-left: 0;
+}
+
+.category-label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* 1️⃣—inline heading so it can sit beside the bullet */
+.attr-heading     {               /* your <h2> */
+  display: inline;                /* key line */
+  margin: 0 .4rem;                /* little breathing room */
+}
+
+/* 2️⃣—block wrapper for the rest of the form controls */
+.attr-field       {
+  margin-left: 1.7rem;            /* indent to line up with heading text */
+}

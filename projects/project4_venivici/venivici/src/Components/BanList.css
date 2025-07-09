@@ -1,0 +1,50 @@
+.BanList {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d2d2d2;
+    color: #000;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.BanList h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.BanList h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Ban buttons stacked vertically */
+.ban-button {
+    background-color: #cc6767;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    width: 90%;
+    text-align: center;
+}
+
+.ban-button:hover {
+    background-color: #d87777;
+    transform: translateY(-2px);
+}
