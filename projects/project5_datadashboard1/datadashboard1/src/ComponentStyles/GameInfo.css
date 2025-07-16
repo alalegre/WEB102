@@ -1,0 +1,26 @@
+.GameInfo {
+    backdrop-filter: blur(4px);
+    background-color: hsla(0, 0%, 100%, .092);
+    box-shadow: 0 15px 25px hsla(0, 2%, 50%, .154);
+    padding: 20px 20px 40px;
+}
+
+.title-list {
+  display: flex;
+  justify-content: space-between; /* spread columns out */
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.column {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+/* Optional: fine-tune widths */
+.title { flex: 2; }
+.release-date, .platform, .rating { flex: 1; }
