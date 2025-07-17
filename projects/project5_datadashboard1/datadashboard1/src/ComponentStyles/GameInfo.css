@@ -3,6 +3,8 @@
     background-color: hsla(0, 0%, 100%, .092);
     box-shadow: 0 15px 25px hsla(0, 2%, 50%, .154);
     padding: 20px 20px 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .title-list {
@@ -24,3 +26,34 @@
 /* Optional: fine-tune widths */
 .title { flex: 2; }
 .release-date, .platform, .rating { flex: 1; }
+
+/* Evenly spaces out the content */
+.GameInfo table {
+  width: 100%;            /* Full width container */
+  border-collapse: collapse; /* Remove double borders */
+  table-layout: fixed;    /* Makes columns take equal widths */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Adds horizontal lines and spaces */
+.GameInfo th, .GameInfo td {
+  padding: 12px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;       
+  white-space: nowrap;    
+  text-overflow: ellipsis;
+}
+
+/* Column header background */
+.GameInfo thead {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.GameInfo tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}

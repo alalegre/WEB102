@@ -4,40 +4,38 @@ import './App.css'
 import GameInfo from "./Components/GameInfo";
 import SideBar from "./Components/SideBar";
 import Card from "./Components/Card";
-import tempJSON from './Components/tempJSON';
 
 const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 function App() {
   const [gameList, setGameList] = useState(null);
 
-  // useEffect(() => {
-  //   const fetchGameInfo = async () => {
-  //     const response = await fetch(`https://api.weatherbit.io/v2.0/current?&postal_code=95060&country=US&key=` + API_KEY);
-  //     const json = await response.json();
-  //     console.log(json);
+  useEffect(() => {
+    const fetchGameInfo = async () => {
+      // Fetch 10-day forecast
+      const response = await fetch(`https://api.weatherbit.io/v2.0/forecast/daily?postal_code=95061&country=US&days=15&key=` + API_KEY);
+      const json = await response.json();
+      console.log(json);
 
-  //     setGameList(json);
-  //   }
-  //   fetchGameInfo().catch(console.error);
-  // }, []);
-
-  console.log(tempJSON[0].data["city_name"]);
+      setGameList(json);
+    }
+    fetchGameInfo().catch(console.error);
+  }, []);
 
   return (
     <>
       <SideBar />
-      <div className="main-content">
-        <div className="cards-row">
-          <Card title="Location" value="Santa Cruz, CA" />
-          <Card title="Current Temp" value="40 F" />
-          <Card title="Sunset | Sunrise" value="5:23a | 8:48p" />
+      {gameList && (
+        <div className="main-content">
+          <div className="cards-row">
+            <Card title="Location" value={gameList.city_name} />
+            <Card title="Date" value={gameList.data[0].datetime} />
+            <Card title="Current Temp" value={gameList.data[0].temp} />
+            <Card title="High | Low" value={`${gameList.data[0].max_temp} | ${gameList.data[0].min_temp}`} />
+          </div>
+          <GameInfo forecastData={gameList.data} />
         </div>
-        {/* <ul>
-          {list && Object.entries(gameList.)}
-        </ul> */}
-        <GameInfo />
-      </div>
+      )}
     </>
   );
 }
