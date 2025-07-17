@@ -2,7 +2,7 @@
 
 Submitted by: Aldridge Alegre
 
-This web app: **insert description**
+This web app grabs the next 14 days and shows the high and low temperatures of each day and its projected weather. The user can search for a specific date or a specific weather.
 
 Time spent: **X** hours spent in total
 
@@ -10,25 +10,25 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] **The site has a dashboard displaying a list of data fetched using an API call**
+- [x] **The site has a dashboard displaying a list of data fetched using an API call**
   - The dashboard should display at least 10 unique items, one per row
   - The dashboard includes at least two features in each row
-- [ ] **`useEffect` React hook and `async`/`await` are used**
-- [ ] **The app dashboard includes at least three summary statistics about the data** 
+- [x] **`useEffect` React hook and `async`/`await` are used**
+- [x] **The app dashboard includes at least three summary statistics about the data** 
   - The app dashboard includes at least three summary statistics about the data, such as:
     - *insert details here*
-- [ ] **A search bar allows the user to search for an item in the fetched data**
+- [x] **A search bar allows the user to search for an item in the fetched data**
   - The search bar **correctly** filters items in the list, only displaying items matching the search query
   - The list of results dynamically updates as the user types into the search bar
-- [ ] **An additional filter allows the user to restrict displayed items by specified categories**
+- [x] **An additional filter allows the user to restrict displayed items by specified categories**
   - The filter restricts items in the list using a **different attribute** than the search bar 
   - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
   - The dashboard list dynamically updates as the user adjusts the filter
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types
+- [x] Multiple filters can be applied simultaneously
+- [x] Filters use different input types
   - e.g., as a text input, a dropdown or radio selection, and/or a slider
 - [ ] The user can enter specific bounds for filter values
 
@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/gcgJ3Vg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/d6HpHHH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
