@@ -1,12 +1,18 @@
 import './CreateCard.css'
 
-const CreateCard = (props) => {
+const CreateCard = ({ text, placeholder, name, value, onChange }) => {
     return (
         <div className="CreateCard">
-            <p>{props.text}</p>
-            <input type='text' name='name' placeholder={props.placeholder}></input>
+            <p>{text}</p>
+            <input
+                type="text"
+                name={name}
+                placeholder={placeholder}
+                value={value}
+                onChange={onChange}
+            />
         </div>
-    )
-}
+    );
+};
 
-export default CreateCard
+export default CreateCard;

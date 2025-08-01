@@ -6,6 +6,7 @@ import Edit from './pages/Edit'
 import Summary from './pages/Summary'
 import Main from './pages/Main'
 import Sidebar from './components/SideBar'
+import Info from './pages/Info'
 
 import { useRoutes } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -29,17 +30,31 @@ function App() {
     {
       path: "/create",
       element: <Create />
+    },
+    {
+      path: "summary/edit/:id",
+      element: <Edit />
+    },
+    {
+      path: "summary/info/:id",
+      element: <Info />
     }
   ])
 
   return (
     <div className="App">
       <Sidebar />
-      <div className="header">
+      <div className="MainContent">
+        <div className="MainInner">
+          <div className="header" />
+          {element}
+        </div>
       </div>
-      {element}
+
     </div>
   )
+
+
 }
 
 export default App
