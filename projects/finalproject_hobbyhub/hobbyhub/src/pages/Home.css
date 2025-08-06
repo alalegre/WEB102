@@ -1,0 +1,25 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.sortButtons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-self: flex-start;
+    
+}
+
+.sortButtons button {
+    padding: 10px;
+    background-color: #AD1457;
+}

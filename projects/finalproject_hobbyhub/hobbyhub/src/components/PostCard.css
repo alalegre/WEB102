@@ -1,0 +1,49 @@
+.PostCard {
+  background-color: white;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  width: 50em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.PostCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.name {
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.timestamp {
+  color: gray;
+  margin-bottom: 4px;
+}
+
+.upvotes {
+  color: gray;
+  margin-top: 12px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentCount {
+  color: gray;
+  margin-top: 12px;
+}

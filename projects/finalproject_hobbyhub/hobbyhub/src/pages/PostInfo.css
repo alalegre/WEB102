@@ -1,0 +1,85 @@
+.PostInfo {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    padding: 30px;
+    align-items: flex-start;
+    text-align: left;
+
+    justify-content: flex-start;
+
+    width: 80em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 5em;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.comments h4 {
+    margin: 0 0 10px 0;
+}
+
+.comments ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.comments li::before {
+    content: "- ";
+    margin-right: 4px;
+}
+
+.comments li {
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: black;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.moreButton {
+  width: 34px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.moreButton:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2);
+}

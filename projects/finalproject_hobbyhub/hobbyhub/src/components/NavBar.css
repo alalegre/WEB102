@@ -1,0 +1,71 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #AD1457;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.left-side {
+    flex-shrink: 0; /* Prevent it from being squished */
+}
+
+.search-bar {
+    flex: 0 1 300px; /* Fixed max width */
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.right-side {
+    display: flex;
+    gap: 35px;
+    flex-shrink: 0; /* Also prevent shrinking */
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+    color: #fff;
+    transform: translateX(5px);  /* subtle shift */
+    text-decoration: underline;
+    cursor: pointer;  /* make it clear it's interactive */
+}
+
+.NavBar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.NavBar a:hover {
+    color: #fff;
+    transform: translateX(5px);
+    text-decoration: underline;
+}
